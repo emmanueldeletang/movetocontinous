@@ -1,13 +1,13 @@
- #Connect-AzAccount  -Tenant "9b802d8b-33fa-40fb-acb7-9ffdbd1919eb" 
- # Connect-AzAccount -TenantId 329f89de-57f6-4294-a279-d6d503c54d87'    
+
+ # Connect-AzAccount -TenantId 3xxxxxxxd87'    
 
 # select-AzSubscription -SubscriptionId
 
 
 
-$subscriptionList=@("747112cf-d2bc-49fa-9001-e8602a3c8a0e")
+$subscriptionList=@("7471xxxxxxe")
 
-# foreach ($subscription in get-AzSubscription -TenantId 9b802d8b-33fa-40fb-acb7-9ffdbd1919eb) 
+
 foreach ($subscription in $subscriptionList) 
 {
     select-AzSubscription -SubscriptionId $subscription #$subscription.Id
